@@ -3,10 +3,9 @@ using namespace std;
 
 int main() 
 {
-  int celcius;
+  int celcius, kembali, pilihan;
   float farenheit;
   float reamur;
-  int pilihan;
   double jawaban;
   double total;
 
@@ -23,7 +22,15 @@ int main()
     cout << "Masukkan derajat C : ";
     cin >> jawaban;
     total = jawaban * 32.8;
-    cout << total;
+    cout << total << endl;
+    cout << "Apakah ingin menghitung ulang? \n";
+    cout << "Tekan 1 jika ingin menghitung ulang \n";
+    cout << "Tekan 0 jika ingin keluar \n";
+    cout << "Masukkan pilihan anda : ";
+    cin >> kembali;
+    if (kembali == 1){
+        return main();
+    }
   }
 
   else if (pilihan == 2){
@@ -31,35 +38,75 @@ int main()
     cout << "Masukkan derajat C : ";
     cin >> jawaban;
     total = jawaban * 1.25;
-    cout << total;
+    cout << total << endl;
+    cout << "Apakah ingin menghitung ulang? \n";
+    cout << "Tekan 1 jika ingin menghitung ulang \n";
+    cout << "Tekan 0 jika ingin keluar \n";
+    cout << "Masukkan pilihan anda : ";
+    cin >> kembali;
+    if (kembali == 1){
+        return main();
+    }
   }
 
   else if (pilihan == 3){
     cout << "Masukkan derajat F : ";
     cin >> jawaban;
     total = (jawaban - 32) * 5/9;
-    cout << total;
+    cout << total << endl;
+    cout << "Apakah ingin menghitung ulang? \n";
+    cout << "Tekan 1 jika ingin menghitung ulang \n";
+    cout << "Tekan 0 jika ingin keluar \n";
+    cout << "Masukkan pilihan anda : ";
+    cin >> kembali;
+    if (kembali == 1){
+        return main();
+    }
   }
 
   else if (pilihan == 4){
     cout << "Masukkan derajat F : ";
     cin >> jawaban;
     total = (jawaban - 32) * 5/9 + 273.15;
-    cout << total;
+    cout << total << endl;
+    cout << "Apakah ingin menghitung ulang? \n";
+    cout << "Tekan 1 jika ingin menghitung ulang \n";
+    cout << "Tekan 0 jika ingin keluar \n";
+    cout << "Masukkan pilihan anda : ";
+    cin >> kembali;
+    if (kembali == 1){
+        return main();
+    }
   }
 
   else if (pilihan == 5){
     cout << "Masukkan derajat R : ";
     cin >> jawaban;
     total = jawaban - 273.15 ;
-    cout << total;
+    cout << total << endl;
+    cout << "Apakah ingin menghitung ulang? \n";
+    cout << "Tekan 1 jika ingin menghitung ulang \n";
+    cout << "Tekan 0 jika ingin keluar \n";
+    cout << "Masukkan pilihan anda : ";
+    cin >> kembali;
+    if (kembali == 1){
+        return main();
+    }
   }
 
   else if (pilihan == 6){
     cout << "Masukkan derajat R : ";
     cin >> jawaban;
     total = (jawaban - 273.15) * 9/5 + 32 ;
-    cout << total;
+    cout << total << endl;
+    cout << "Apakah ingin menghitung ulang? \n";
+    cout << "Tekan 1 jika ingin menghitung ulang \n";
+    cout << "Tekan 0 jika ingin keluar \n";
+    cout << "Masukkan pilihan anda : ";
+    cin >> kembali;
+    if (kembali == 1){
+        return main();
+    }
   }
   else {
       cout << "Masukkan pilihan dengan benar!";
