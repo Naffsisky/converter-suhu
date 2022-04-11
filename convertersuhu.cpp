@@ -21,8 +21,9 @@ int main()
   if (pilihan == 1){
     cout << "Masukkan derajat C : ";
     cin >> jawaban;
-    total = jawaban * 32.8;
-    cout << total << endl;
+    total = (9/5 *jawaban) + 32;
+    cout<<"\n\n";
+    cout<<"Hasil konversi Celcius to Farenheit : "<<total<<"\n";
     cout << "Apakah ingin menghitung ulang? \n";
     cout << "Tekan 1 jika ingin menghitung ulang \n";
     cout << "Tekan 0 jika ingin keluar \n";
